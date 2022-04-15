@@ -25,7 +25,7 @@ composer install
 To fetch your ButterCMS content, add your API token as an environment variable in `.env` file.
 
 ```
-echo 'LARAVEL_APP_BUTTER_CMS_API_KEY=<Your API Token>'
+echo 'LARAVEL_APP_BUTTER_CMS_API_KEY=<Your API Token>' >> .env
 ```
 
 ### 3. Run local server
