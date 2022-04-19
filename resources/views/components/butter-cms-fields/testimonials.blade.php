@@ -5,7 +5,7 @@
                 <div class="testimonial-active-wrapper">
 
                     <div class="section-title text-center">
-                        <h2 class="mb-20"{{$pageFields['headline']}}</h2>
+                        <h2 class="mb-20">{{$pageFields['headline']}}</h2>
                     </div>
 
                     <div class="testimonial-active">
