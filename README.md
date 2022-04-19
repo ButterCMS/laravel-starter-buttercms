@@ -1,4 +1,4 @@
-![recommended PHP version](https://img.shields.io/packagist/php-v/laravel/laravel)
+![recommended PHP version](https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/ButterCMS/laravel-starter-buttercms/master/composer.json&label=php&query=require.php&color=blue)
 
 # Laravel + ButterCMS Starter Project
 
@@ -10,6 +10,12 @@ You can view a [live demo hosted on Heroku](https://laravel-starter-buttercms-te
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/ButterCMS/laravel-starter-buttercms&env%5BLARAVEL_APP_BUTTER_CMS_API_KEY%5D=check%20https://buttercms.com/settings)
 
 ## 1. Installation
+
+Before you begin, make sure you have the correct version of PHP installed and also that you are running a newest version of composer (or at least > 2.0), as you might run into deprecation warnings/errors while trying to run this project.
+
+Useful links:
+- [PHP](https://www.php.net/downloads.php)
+- [Composer](https://getcomposer.org/download/)
 
 First, clone the repo and install the dependencies
 ```shell
