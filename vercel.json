@@ -2,10 +2,6 @@
     "functions": {
         "api/index.php": { "runtime": "vercel-php@0.5.0" }
     },
-    "routes": [{
-        "src": "/(.*)",
-        "dest": "/api/index.php"
-    }],
     "env": {
         "APP_ENV": "production",
 
