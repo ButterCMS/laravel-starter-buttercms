@@ -4,7 +4,7 @@
 
 This Laravel starter project fully integrates with dynamic sample content from your ButterCMS account, including main menu, pages, blog posts, categories, and tags, all with a beautiful, custom theme with already-implemented search functionality. All of the included sample content is automatically created in your account dashboard when you sign up for a free trial of ButterCMS.
 
-You can view a [live demo hosted on Heroku](https://laravel-starter-buttercms-test.herokuapp.com), or you can click the button below to deploy your own copy of our starter project to the provider of your choice.
+You can view a [live demo hosted on Heroku](http://laravel-starter-buttercms.herokuapp.com/), or you can click the button below to deploy your own copy of our starter project to the provider of your choice.
 
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/ButterCMS/laravel-starter-buttercms&env%5BLARAVEL_APP_BUTTER_CMS_API_KEY%5D=check%20https://buttercms.com/settings)
