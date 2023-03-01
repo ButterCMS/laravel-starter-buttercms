@@ -6,20 +6,20 @@
     "license": "MIT",
     "require": {
         "php": "^8.0.2",
-        "buttercms/buttercms-php": "^2.4",
-        "guzzlehttp/guzzle": "^7.2",
-        "laravel/framework": "^9.2",
-        "laravel/sanctum": "^2.14.1",
-        "laravel/tinker": "^2.7"
+        "buttercms/buttercms-php": "^3.0.1",
+        "guzzlehttp/guzzle": "^7.5",
+        "laravel/framework": "^9.52.1",
+        "laravel/sanctum": "^3.2.1",
+        "laravel/tinker": "^2.8.1"
     },
     "require-dev": {
-        "fakerphp/faker": "^1.9.1",
-        "laravel/sail": "^1.0.1",
-        "mockery/mockery": "^1.4.4",
-        "nunomaduro/collision": "^6.1",
-        "nunomaduro/larastan": "^2.0",
-        "phpunit/phpunit": "^9.5.10",
-        "spatie/laravel-ignition": "^1.0",
+        "fakerphp/faker": "^1.21.0",
+        "laravel/sail": "^1.21.0",
+        "mockery/mockery": "^1.5.1",
+        "nunomaduro/collision": "^6.4",
+        "nunomaduro/larastan": "^2.4.1",
+        "phpunit/phpunit": "^9.6.3",
+        "spatie/laravel-ignition": "^1.6.4",
         "stechstudio/laravel-php-cs-fixer": "^3.1"
     },
     "autoload": {
