@@ -16,13 +16,18 @@ This project requires:
 
 ## 1. Installation
 
-# Install PHP and required extensions (Ubuntu/Debian)
+### Install PHP and required extensions (Ubuntu/Debian)
 sudo apt update
 sudo apt install php8.1 php8.1-mbstring php8.1-xml php8.1-curl php8.1-zip
 
-# Install Composer if needed
+### Install Composer if needed (Ubuntu/Debian)
 sudo apt install composer
 
+### Install PHP and required extensions (MacOS)
+brew install php@8.1
+
+### Install Composer if needed (MacOS)
+brew install composer
 
 Then, clone the repo and install the dependencies:
 
@@ -32,11 +37,11 @@ cd laravel-starter-buttercms
 composer install
 ```
 
-### 2. Set API Token
+## 2. Set API Token
 
-To fetch your ButterCMS content, create an .env file from the .env.example file and  add your API token as an environment variable.
+To fetch your ButterCMS content, open .env file that was created during "composer install" and add your API token as an environment variable.
 
-### 3. Run local server
+## 3. Run local server
 
 To view the app in the browser, you'll need to run the local development server:
 
