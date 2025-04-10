@@ -6,34 +6,48 @@ This Laravel starter project fully integrates with dynamic sample content from y
 
 You can view a [live demo hosted on Heroku](http://laravel-starter-buttercms.herokuapp.com/), or you can click the button below to deploy your own copy of our starter project to the provider of your choice.
 
-
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/ButterCMS/laravel-starter-buttercms&env%5BLARAVEL_APP_BUTTER_CMS_API_KEY%5D=check%20https://buttercms.com/settings)
+
+## Requirements
+
+This project requires:
+- PHP 8.1+
+- Composer 2.3.5+
 
 ## 1. Installation
 
-***Note: This project requires PHP 8.0.2+ and Composer 2.3.5+. To install/update PHP or Composer, follow the instructions in [Troubleshooting](#6-troubleshooting), below.***
+### Install PHP and required extensions (Ubuntu/Debian)
+sudo apt update
+sudo apt install php8.1 php8.1-mbstring php8.1-xml php8.1-curl php8.1-zip
 
-First, clone the repo and install the dependencies
+### Install Composer if needed (Ubuntu/Debian)
+sudo apt install composer
+
+### Install PHP and required extensions (MacOS)
+brew install php@8.1
+
+### Install Composer if needed (MacOS)
+brew install composer
+
+Then, clone the repo and install the dependencies:
+
 ```shell
 git clone https://github.com/ButterCMS/laravel-starter-buttercms
 cd laravel-starter-buttercms
 composer install
 ```
 
-### 2. Set API Token
+## 2. Set API Token
 
-To fetch your ButterCMS content, add your API token as an environment variable in `.env` file.
+To fetch your ButterCMS content, open .env file that was created during "composer install" and add your API token as an environment variable.
 
-```
-echo 'LARAVEL_APP_BUTTER_CMS_API_KEY=<Your API Token>' >> .env
-```
-
-### 3. Run local server
+## 3. Run local server
 
 To view the app in the browser, you'll need to run the local development server:
 
 ```bash
-$ php artisan serve
+
+php artisan serve
 ```
 
 Congratulations! Your starter project is now live at [http://localhost:8000/](http://localhost:8000/).
@@ -52,20 +66,21 @@ By default, your starter project is set up to allow previewing of draft changes 
 
 ## 6. Troubleshooting
 
-In order for this starter project to run properly, you'll want to use PHP 8.0.2 or above and Composer 2.3.5 or above. Using lower versions will result in deprecation errors and warnings, and may prevent Composer from installing or running the project properly.
-### Installing/Upgrading PHP
+If you are sure your PHP and Composer versions are correct, you can try the following:
 
-Instructions to update your PHP version are provided below; please tailor them to your setup.
+### Laravel-specific Issues
+If you encounter errors after installation:
 
+```bash
+# Clear application caches
+php artisan cache:clear
+php artisan config:clear
+php artisan route:clear
+php artisan view:clear
+
+# Regenerate autoloader files
+composer dump-autoload
 ```
-sudo apt install software-properties-common && sudo add-apt-repository ppa:ondrej/php -y
-sudo apt update
-sudo apt upgrade -y
-```
-### Installing/Upgrading Composer
 
-To check your composer version, you can try `composer -vv about`. If your version is under 2.3.5, you can try the `composer self-update` command, which should auto-update Composer to the latest version, but this may not work if Composer was installed with a package manager.
-
-To update Composer, follow the official instructions here: https://getcomposer.org/download/. If you installed an older version of Composer with a package manager, it's recommend to use `sudo apt remove composer` first to prevent version conflicts. 
-
-
+## 7. ButterCMS Integration
+This project uses ButterCMS version 3.1.0. For documentation and API references, visit [ButterCMS PHP API docs](https://buttercms.com/docs/api-client/php/).
