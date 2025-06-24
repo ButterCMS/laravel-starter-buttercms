@@ -14,5 +14,6 @@
       "description": "The API token of your ButterCMS account",
       "value": ""
     }
-  }
+  },
+  "stack": "heroku-24"
 }
